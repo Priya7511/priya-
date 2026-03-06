@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background: #1e90ff;
+  padding: 10px 20px;
+  display: flex;
+}
+
+.button {
+  background: #1e90ff;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+}

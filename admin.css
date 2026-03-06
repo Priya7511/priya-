@@ -1,0 +1,157 @@
+/* =======================
+   DASHBOARD LAYOUT
+======================= */
+
+.dashboard {
+  display: flex;
+}
+
+/* =======================
+   SIDEBAR
+======================= */
+
+.sidebar {
+  width: 230px;
+  background: #1e293b;
+  color: white;
+  padding: 30px 20px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.logo-box {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.admin-logo {
+  width: 130px;
+  height: auto;
+}
+
+.brand-name {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-top: 5px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar ul li:hover {
+  color: #38bdf8;
+}
+
+.sidebar ul li.active {
+  color: #38bdf8;
+  font-weight: bold;
+}
+
+/* =======================
+   MAIN CONTENT
+======================= */
+
+.main-content {
+  flex: 1;
+  padding: 40px;
+  background: #f4f6f8;
+}
+
+/* =======================
+   DASHBOARD CARDS
+======================= */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card p {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* =======================
+   SEARCH BOX
+======================= */
+
+.search-box {
+  padding: 10px;
+  width: 250px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* =======================
+   TABLE
+======================= */
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+table th {
+  background: #1e293b;
+  color: white;
+  padding: 14px;
+  text-align: left;
+}
+
+table td {
+  padding: 14px;
+}
+
+table tr:nth-child(even) td {
+  background: #f8fafc;
+}
+
+table tr:hover td {
+  background: #e2e8f0;
+}
+
+/* =======================
+   DELETE BUTTON
+======================= */
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
